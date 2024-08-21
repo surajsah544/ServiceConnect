@@ -38,8 +38,6 @@ const workPostSchema = new Schema({
   },
   employer: {
     type: String,
-    ref: "Employer",
-    required: true,
   },
   requiredSkills: {
     type: [String],
