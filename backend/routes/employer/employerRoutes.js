@@ -10,10 +10,10 @@ const {
 } = require("../../controller/employer/employerController");
 const employerLoggedIn = require("../../middleware/employerLoggedIn");
 
-router.get("/", getAllWorks);
+router.get("/", getAllWorks); //Read
 router.get("/:id", getSingleWork);
-router.post("/", employerLoggedIn, postAWork);
-router.patch("/:id", employerLoggedIn, updateASingleWork);
-router.delete("/:id", employerLoggedIn, deleteASingleWork);
+router.post("/", employerLoggedIn, postAWork); //Create
+router.patch("/:id", employerLoggedIn, updateASingleWork); //Update
+router.delete("/:id", employerLoggedIn, deleteASingleWork); //Delete
 
 module.exports = router;
